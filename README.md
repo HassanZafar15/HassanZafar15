@@ -7,15 +7,15 @@
 
 - 🔭 I’m currently working on **Mobile App Development - Flutter**
 
-- 🌱 I’m currently learning **AR/ML & Middleware Platform (WSO2)**
+- 🌱 I’m currently learning **AI & Middleware Platform (WSO2)**
 
 - 👯 I’m looking to collaborate on **Flutter Projects**
 
 - 💬 Ask me about **Flutter or Dart**
 
-- 📫 How to reach me **z.hassan1599@gmail.com**
+- 📫 How to reach me **dev.hassanzafar@gmail.com**
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/hassan-zafar-b9575b177](https://www.linkedin.com/in/hassan-zafar-b9575b177)
+- 📄 Know about my experiences [https://www.linkedin.com/in/hassanzafar15](https://www.linkedin.com/in/hassanzafar15)
 
 <h3 align="left">Let's Connect:</h3>
 <p align="left">

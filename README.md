@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Hassan Zafar</h1>
-<h3 align="center">A Passionate Flutter Developer & Researcher</h3>
+<h3 align="center">A Passionate Flutter Developer</h3>
 
 <p align="left"> <a href="https://twitter.com/ihassan_15" target="blank"><img src="https://img.shields.io/twitter/follow/ihassan_15?logo=twitter&style=for-the-badge" alt="ihassan_15" /></a> </p>
 
 <picture> <img align="right" src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/Right_Side.gif" width = 250px></picture>
 
-- 🔭 I’m currently working on **Mobile App Development - Flutter**
+- 🔭 I’m currently working on **Mobile & Web App Development - Flutter**
 
 - 🌱 I’m currently learning **AI & Middleware Platform (WSO2)**
 

@@ -16,7 +16,8 @@
 
 ---
 
-<img align="right" width="340" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" />
+<img align="right" width="340" src="https://user-images.githubusercontent.com/74038190/216644497-1951db19-8f3d-4e44-ac08-8e9d7e0d1a40.gif" />
+
 
 ### About Me
 

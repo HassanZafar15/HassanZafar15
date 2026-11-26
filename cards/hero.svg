@@ -95,13 +95,13 @@
 
             <g class="row-in" style="animation-delay:0.30s">
               <text x="630" y="82" class="ledger-k">CONTRIBUTIONS</text>
-              <text x="630" y="107" class="ledger-v">298</text>
+              <text x="630" y="107" class="ledger-v">310</text>
             </g>
             
 
             <g class="row-in" style="animation-delay:0.39s">
               <text x="738" y="82" class="ledger-k">ACTIVE DAYS</text>
-              <text x="738" y="107" class="ledger-v">81</text>
+              <text x="738" y="107" class="ledger-v">85</text>
             </g>
             
 

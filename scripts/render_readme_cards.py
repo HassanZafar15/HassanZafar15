@@ -49,7 +49,7 @@ TILES = [
         "unit": "YEARS",
         "subtitle": "Flutter · Dart · Cross-Platform",
         "cta": "VIEW LINKEDIN",
-        "delay": 1.35,
+        "delay": 0.35,
     },
     {
         "filename": "tile-portfolio.svg",
@@ -60,7 +60,7 @@ TILES = [
         "unit": "SHIPPED APPS",
         "subtitle": "GovTech · SaaS · eSIM · Health",
         "cta": "HASSANZAFAR.NETLIFY.APP",
-        "delay": 1.50,
+        "delay": 0.43,
     },
     {
         "filename": "tile-contact.svg",
@@ -71,7 +71,7 @@ TILES = [
         "unit": "AVG REPLY",
         "subtitle": "Remote Roles & Freelance",
         "cta": "START A CONVERSATION",
-        "delay": 1.65,
+        "delay": 0.51,
     },
 ]
 
@@ -83,7 +83,7 @@ FEATURED_WORK = [
         "title": "EPADS",
         "desc": "World Bank-funded PPRA system digitising Pakistan's public procurement lifecycle. Contributed to eprocure.gov.pk and the Flutter companion app.",
         "tags": ["Flutter", "REST APIs", "Firebase", "Live Web"],
-        "delay": 1.90,
+        "delay": 0.55,
     },
     {
         "filename": "work-movingcrm.svg",
@@ -92,7 +92,7 @@ FEATURED_WORK = [
         "title": "MovingCRM",
         "desc": "AI-powered SaaS CRM for moving companies with lead pipelines, dispatch, payroll, and portals. Built the Flutter Web app and core dashboards.",
         "tags": ["Flutter Web", "CRM", "SaaS", "Dashboards"],
-        "delay": 2.00,
+        "delay": 0.60,
     },
     {
         "filename": "work-tjwalnet.svg",
@@ -101,7 +101,7 @@ FEATURED_WORK = [
         "title": "Tjwalnet — Travel eSIM",
         "desc": "Region-aware eSIM system covering 70+ countries with in-app wallet and points-based payments. Handles complex telecom logic seamlessly.",
         "tags": ["Flutter", "Firebase", "PayPal", "iOS & Android"],
-        "delay": 2.10,
+        "delay": 0.65,
     },
     {
         "filename": "work-quotes.svg",
@@ -110,7 +110,7 @@ FEATURED_WORK = [
         "title": "Quotes & Motivation",
         "desc": "Daily quotes and motivation app with 10K+ downloads and a 4.7★ rating — curated collections, shareable cards, favorites, and smart reminders.",
         "tags": ["Flutter", "10K+ Downloads", "Android"],
-        "delay": 2.20,
+        "delay": 0.70,
     },
     {
         "filename": "work-guardtrack.svg",
@@ -119,7 +119,7 @@ FEATURED_WORK = [
         "title": "GuardTrack & Staff",
         "desc": "Mission-critical security platform supporting 500+ officers with precise GPS geofencing and real-time monitoring under demanding field conditions.",
         "tags": ["GPS Geofencing", "Real-Time", "iOS & Android"],
-        "delay": 2.30,
+        "delay": 0.75,
     },
     {
         "filename": "work-mymyo.svg",
@@ -128,7 +128,7 @@ FEATURED_WORK = [
         "title": "My MYO — Therapy",
         "desc": "Clinical therapy platform featuring an interactive video exercise player and client appointment management bridging patients and therapists.",
         "tags": ["Video Player", "Scheduling", "iOS & Android"],
-        "delay": 2.40,
+        "delay": 0.80,
     },
     {
         "filename": "work-surrey.svg",
@@ -137,7 +137,7 @@ FEATURED_WORK = [
         "title": "Surrey Security Staff",
         "desc": "Enterprise-grade staff coordination system for large-scale security operations, compliance, workforce scheduling, live shift tools, and reporting.",
         "tags": ["Workforce", "Compliance", "iOS & Android"],
-        "delay": 2.50,
+        "delay": 0.85,
     },
     {
         "filename": "work-buildingco.svg",
@@ -146,7 +146,7 @@ FEATURED_WORK = [
         "title": "09 Building Co",
         "desc": "Operations app for construction teams featuring job assignment, project tracking, employee workflows, PDF handoffs, and completion photos.",
         "tags": ["Construction", "Field Ops", "iOS & Android"],
-        "delay": 2.60,
+        "delay": 0.90,
     },
 ]
 
@@ -422,7 +422,7 @@ def render_graph(data: dict) -> str:
 
     for wi, week in enumerate(weeks):
         col_x = ox + wi * step
-        delay = 0.55 + wi * 0.014
+        delay = 0.22 + wi * 0.008
         first_valid = next((d for d in week if d is not None), None)
         if first_valid:
             ym = first_valid["date"][:7]
@@ -521,7 +521,7 @@ def render_activity(data: dict) -> str:
         by = baseline - bh
         is_peak = idx == peak_idx and m["count"] > 0
         fill = BLUE if is_peak else "#D4CCBD"
-        delay = 0.85 + idx * 0.045
+        delay = 0.28 + idx * 0.025
         m_name = datetime.strptime(m["month"], "%Y-%m").strftime("%b").upper()
 
         bars_svg.append(
@@ -532,7 +532,7 @@ def render_activity(data: dict) -> str:
             f'<text x="{bx + bar_w / 2:.1f}" y="220" text-anchor="middle" class="m-lbl">{m_name}</text>'
         )
         if is_peak:
-            pop_delay = delay + 0.42
+            pop_delay = delay + 0.35
             bars_svg.append(
                 f'<text x="{bx + bar_w / 2:.1f}" y="{by - 7:.1f}" text-anchor="middle" '
                 f'class="peak-v pop-in" style="animation-delay:{pop_delay:.2f}s">{m["count"]}</text>'
@@ -555,13 +555,13 @@ def render_smil_countup(x: float, y: float, target: int, suffix: str, start_dela
         return f'<text x="{x}" y="{y}" class="big-num">{esc(final_label)}</text>'
 
     frames = 18
-    step_dur = 0.045
+    step_dur = 0.032
     els = [f'<text x="{x}" y="{y}" class="big-num smil-static" style="display:none">{esc(final_label)}</text>']
     for i in range(frames):
         val = round((i / (frames - 1)) * target)
-        begin = start_delay + i * step_dur
+        begin = 0.0 if i == 0 else start_delay + (i - 1) * step_dur
         if i < frames - 1:
-            end = begin + step_dur
+            end = start_delay + i * step_dur
             set_tags = (
                 f'<set attributeName="visibility" to="visible" begin="{begin:.3f}s" end="{end:.3f}s" />'
             )
@@ -618,7 +618,7 @@ def render_tile(tile: dict) -> str:
         dur="5.8s" begin="{delay + 1.4:.2f}s" repeatCount="indefinite" />
     """
 
-    count_svg = render_smil_countup(24, 98, tile["count_target"], tile["count_suffix"], delay + 0.25)
+    count_svg = render_smil_countup(24, 98, tile["count_target"], tile["count_suffix"], delay + 0.05)
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(tile['eyebrow'])}">
   <defs>
@@ -708,7 +708,7 @@ def render_stack_and_experience() -> str:
       from {{ opacity: 0; transform: translateY(10px); }}
       to {{ opacity: 1; transform: translateY(0); }}
     }}
-    .rise {{ opacity: 0; animation: fadeUp 0.5s ease-out 2.75s forwards; }}
+    .rise {{ opacity: 0; animation: fadeUp 0.45s ease-out 0.95s forwards; }}
     """
 
     # Left: Tech Stack pills wrapped cleanly within x=28..408

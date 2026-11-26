@@ -1,16 +1,16 @@
 import json
 import os
 from collections import defaultdict
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 
 USERNAME = "HassanZafar15"
 TOKEN = os.environ["STATS_TOKEN"]
 
 QUERY = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
+query($login: String!) {
   user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
+    contributionsCollection {
       contributionCalendar {
         totalContributions
         weeks {
@@ -29,13 +29,10 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 def fetch_calendar():
     now = datetime.now(timezone.utc)
-    start = now - timedelta(days=364)
     payload = json.dumps({
         "query": QUERY,
         "variables": {
             "login": USERNAME,
-            "from": start.strftime("%Y-%m-%dT00:00:00Z"),
-            "to": now.strftime("%Y-%m-%dT23:59:59Z"),
         },
     }).encode("utf-8")
 

@@ -10,7 +10,7 @@
       
       <animateTransform attributeName="gradientTransform" type="translate"
         values="-1.4 0; 2.4 0; 2.4 0" keyTimes="0; 0.25; 1"
-        dur="5.8s" begin="3.05s" repeatCount="indefinite" />
+        dur="5.8s" begin="1.91s" repeatCount="indefinite" />
     
     </linearGradient>
   </defs>
@@ -36,15 +36,15 @@
     }
     .tile-wrap {
       opacity: 0; transform-box: fill-box; transform-origin: center;
-      animation: tileSwing 0.65s cubic-bezier(0.22,1,0.36,1) 1.65s forwards;
+      animation: tileSwing 0.65s cubic-bezier(0.22,1,0.36,1) 0.51s forwards;
     }
     .corner-ring {
       transform-box: fill-box; transform-origin: center;
-      animation: ringPulse 3.2s ease-out 2.25s infinite;
+      animation: ringPulse 3.2s ease-out 1.11s infinite;
     }
     .arrow {
       display: inline-block;
-      animation: nudgeArrow 2.2s ease-in-out 2.55s infinite;
+      animation: nudgeArrow 2.2s ease-in-out 1.41s infinite;
     }
     
 
@@ -69,24 +69,24 @@
     </g>
     <text x="24" y="34" class="eyebrow">AVAILABILITY</text>
     <text x="24" y="98" class="big-num smil-static" style="display:none">24h</text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">0<set attributeName="visibility" to="visible" begin="1.900s" end="1.945s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">1h<set attributeName="visibility" to="visible" begin="1.945s" end="1.990s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">3h<set attributeName="visibility" to="visible" begin="1.990s" end="2.035s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">4h<set attributeName="visibility" to="visible" begin="2.035s" end="2.080s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">6h<set attributeName="visibility" to="visible" begin="2.080s" end="2.125s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">7h<set attributeName="visibility" to="visible" begin="2.125s" end="2.170s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">8h<set attributeName="visibility" to="visible" begin="2.170s" end="2.215s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">10h<set attributeName="visibility" to="visible" begin="2.215s" end="2.260s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">11h<set attributeName="visibility" to="visible" begin="2.260s" end="2.305s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">13h<set attributeName="visibility" to="visible" begin="2.305s" end="2.350s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">14h<set attributeName="visibility" to="visible" begin="2.350s" end="2.395s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">16h<set attributeName="visibility" to="visible" begin="2.395s" end="2.440s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">17h<set attributeName="visibility" to="visible" begin="2.440s" end="2.485s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">18h<set attributeName="visibility" to="visible" begin="2.485s" end="2.530s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">20h<set attributeName="visibility" to="visible" begin="2.530s" end="2.575s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">21h<set attributeName="visibility" to="visible" begin="2.575s" end="2.620s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">23h<set attributeName="visibility" to="visible" begin="2.620s" end="2.665s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">24h<set attributeName="visibility" to="visible" begin="2.665s" fill="freeze" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">0<set attributeName="visibility" to="visible" begin="0.000s" end="0.560s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1h<set attributeName="visibility" to="visible" begin="0.560s" end="0.592s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">3h<set attributeName="visibility" to="visible" begin="0.592s" end="0.624s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4h<set attributeName="visibility" to="visible" begin="0.624s" end="0.656s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">6h<set attributeName="visibility" to="visible" begin="0.656s" end="0.688s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">7h<set attributeName="visibility" to="visible" begin="0.688s" end="0.720s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">8h<set attributeName="visibility" to="visible" begin="0.720s" end="0.752s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">10h<set attributeName="visibility" to="visible" begin="0.752s" end="0.784s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">11h<set attributeName="visibility" to="visible" begin="0.784s" end="0.816s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">13h<set attributeName="visibility" to="visible" begin="0.816s" end="0.848s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">14h<set attributeName="visibility" to="visible" begin="0.848s" end="0.880s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">16h<set attributeName="visibility" to="visible" begin="0.880s" end="0.912s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">17h<set attributeName="visibility" to="visible" begin="0.912s" end="0.944s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">18h<set attributeName="visibility" to="visible" begin="0.944s" end="0.976s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">20h<set attributeName="visibility" to="visible" begin="0.976s" end="1.008s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">21h<set attributeName="visibility" to="visible" begin="1.008s" end="1.040s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">23h<set attributeName="visibility" to="visible" begin="1.040s" end="1.072s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">24h<set attributeName="visibility" to="visible" begin="1.072s" fill="freeze" /></text>
     <text x="24" y="123" class="unit">AVG REPLY</text>
     <text x="24" y="147" class="sub">Remote Roles &amp; Freelance</text>
     <line x1="24" y1="160" x2="262" y2="160" stroke="#FFFFFF" stroke-opacity="0.24" />

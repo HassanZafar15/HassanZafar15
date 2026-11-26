@@ -10,7 +10,7 @@
       
       <animateTransform attributeName="gradientTransform" type="translate"
         values="-1.4 0; 2.4 0; 2.4 0" keyTimes="0; 0.25; 1"
-        dur="5.8s" begin="2.75s" repeatCount="indefinite" />
+        dur="5.8s" begin="1.75s" repeatCount="indefinite" />
     
     </linearGradient>
   </defs>
@@ -36,15 +36,15 @@
     }
     .tile-wrap {
       opacity: 0; transform-box: fill-box; transform-origin: center;
-      animation: tileSwing 0.65s cubic-bezier(0.22,1,0.36,1) 1.35s forwards;
+      animation: tileSwing 0.65s cubic-bezier(0.22,1,0.36,1) 0.35s forwards;
     }
     .corner-ring {
       transform-box: fill-box; transform-origin: center;
-      animation: ringPulse 3.2s ease-out 1.95s infinite;
+      animation: ringPulse 3.2s ease-out 0.95s infinite;
     }
     .arrow {
       display: inline-block;
-      animation: nudgeArrow 2.2s ease-in-out 2.25s infinite;
+      animation: nudgeArrow 2.2s ease-in-out 1.25s infinite;
     }
     
 
@@ -69,24 +69,24 @@
     </g>
     <text x="24" y="34" class="eyebrow">EXPERIENCE</text>
     <text x="24" y="98" class="big-num smil-static" style="display:none">5+</text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">0<set attributeName="visibility" to="visible" begin="1.600s" end="1.645s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">0+<set attributeName="visibility" to="visible" begin="1.645s" end="1.690s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="1.690s" end="1.735s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="1.735s" end="1.780s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="1.780s" end="1.825s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="1.825s" end="1.870s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="1.870s" end="1.915s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="1.915s" end="1.960s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="1.960s" end="2.005s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="2.005s" end="2.050s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="2.050s" end="2.095s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="2.095s" end="2.140s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="2.140s" end="2.185s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="2.185s" end="2.230s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="2.230s" end="2.275s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="2.275s" end="2.320s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">5+<set attributeName="visibility" to="visible" begin="2.320s" end="2.365s" /></text>
-<text x="24" y="98" class="big-num smil-count" visibility="hidden">5+<set attributeName="visibility" to="visible" begin="2.365s" fill="freeze" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">0<set attributeName="visibility" to="visible" begin="0.000s" end="0.400s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">0+<set attributeName="visibility" to="visible" begin="0.400s" end="0.432s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="0.432s" end="0.464s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="0.464s" end="0.496s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="0.496s" end="0.528s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1+<set attributeName="visibility" to="visible" begin="0.528s" end="0.560s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="0.560s" end="0.592s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="0.592s" end="0.624s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">2+<set attributeName="visibility" to="visible" begin="0.624s" end="0.656s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="0.656s" end="0.688s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="0.688s" end="0.720s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">3+<set attributeName="visibility" to="visible" begin="0.720s" end="0.752s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="0.752s" end="0.784s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="0.784s" end="0.816s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="0.816s" end="0.848s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4+<set attributeName="visibility" to="visible" begin="0.848s" end="0.880s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">5+<set attributeName="visibility" to="visible" begin="0.880s" end="0.912s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">5+<set attributeName="visibility" to="visible" begin="0.912s" fill="freeze" /></text>
     <text x="24" y="123" class="unit">YEARS</text>
     <text x="24" y="147" class="sub">Flutter · Dart · Cross-Platform</text>
     <line x1="24" y1="160" x2="262" y2="160" stroke="#FFFFFF" stroke-opacity="0.24" />

@@ -10,7 +10,7 @@
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .rise { opacity: 0; animation: fadeUp 0.5s ease-out 2.75s forwards; }
+    .rise { opacity: 0; animation: fadeUp 0.45s ease-out 0.95s forwards; }
     
 
     @media (prefers-reduced-motion: reduce) {

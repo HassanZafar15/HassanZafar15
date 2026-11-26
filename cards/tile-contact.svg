@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="286" height="192" viewBox="0 0 286 192" role="img" aria-label="AVAILABILITY">
+  <defs>
+    <clipPath id="tileClip"><rect x="0" y="0" width="286" height="192" rx="14" /></clipPath>
+    <linearGradient id="tileShine" x1="0%" y1="0%" x2="100%" y2="35%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="44%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.22" />
+      <stop offset="56%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+      
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-1.4 0; 2.4 0; 2.4 0" keyTimes="0; 0.25; 1"
+        dur="5.8s" begin="3.05s" repeatCount="indefinite" />
+    
+    </linearGradient>
+  </defs>
+  <style>
+
+    .eyebrow { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; letter-spacing: 0.12em; fill: #F6F3EC; opacity: 0.82; }
+    .big-num { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 62px; fill: #FFFFFF; }
+    .unit { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; letter-spacing: 0.1em; fill: #F6F3EC; opacity: 0.85; }
+    .sub { font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12.5px; fill: #F6F3EC; opacity: 0.92; }
+    .cta { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.08em; fill: #FFFFFF; }
+    @keyframes tileSwing {
+      0% { opacity: 0; transform: translateY(22px) rotate(-2.5deg) scale(0.96); }
+      70% { opacity: 1; transform: translateY(-3px) rotate(0.5deg) scale(1.01); }
+      100% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+    }
+    @keyframes ringPulse {
+      0% { transform: scale(0.8); opacity: 0.45; }
+      100% { transform: scale(2.1); opacity: 0; }
+    }
+    @keyframes nudgeArrow {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(3px, -2px); }
+    }
+    .tile-wrap {
+      opacity: 0; transform-box: fill-box; transform-origin: center;
+      animation: tileSwing 0.65s cubic-bezier(0.22,1,0.36,1) 1.65s forwards;
+    }
+    .corner-ring {
+      transform-box: fill-box; transform-origin: center;
+      animation: ringPulse 3.2s ease-out 2.25s infinite;
+    }
+    .arrow {
+      display: inline-block;
+      animation: nudgeArrow 2.2s ease-in-out 2.55s infinite;
+    }
+    
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .smil-count { display: none !important; }
+      .smil-static { display: inline !important; visibility: visible !important; }
+    }
+    
+</style>
+  <g class="tile-wrap">
+    <g clip-path="url(#tileClip)">
+      <rect x="0" y="0" width="286" height="192" rx="14" fill="#B88212" />
+      <circle cx="264" cy="24" r="18" fill="none" stroke="#FFFFFF" stroke-width="1.2" class="corner-ring" />
+      <circle cx="264" cy="24" r="4" fill="#FFFFFF" opacity="0.85" />
+      <rect x="0" y="0" width="286" height="192" fill="url(#tileShine)" />
+    </g>
+    <text x="24" y="34" class="eyebrow">AVAILABILITY</text>
+    <text x="24" y="98" class="big-num smil-static" style="display:none">24h</text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">0<set attributeName="visibility" to="visible" begin="1.900s" end="1.945s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">1h<set attributeName="visibility" to="visible" begin="1.945s" end="1.990s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">3h<set attributeName="visibility" to="visible" begin="1.990s" end="2.035s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">4h<set attributeName="visibility" to="visible" begin="2.035s" end="2.080s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">6h<set attributeName="visibility" to="visible" begin="2.080s" end="2.125s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">7h<set attributeName="visibility" to="visible" begin="2.125s" end="2.170s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">8h<set attributeName="visibility" to="visible" begin="2.170s" end="2.215s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">10h<set attributeName="visibility" to="visible" begin="2.215s" end="2.260s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">11h<set attributeName="visibility" to="visible" begin="2.260s" end="2.305s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">13h<set attributeName="visibility" to="visible" begin="2.305s" end="2.350s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">14h<set attributeName="visibility" to="visible" begin="2.350s" end="2.395s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">16h<set attributeName="visibility" to="visible" begin="2.395s" end="2.440s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">17h<set attributeName="visibility" to="visible" begin="2.440s" end="2.485s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">18h<set attributeName="visibility" to="visible" begin="2.485s" end="2.530s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">20h<set attributeName="visibility" to="visible" begin="2.530s" end="2.575s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">21h<set attributeName="visibility" to="visible" begin="2.575s" end="2.620s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">23h<set attributeName="visibility" to="visible" begin="2.620s" end="2.665s" /></text>
+<text x="24" y="98" class="big-num smil-count" visibility="hidden">24h<set attributeName="visibility" to="visible" begin="2.665s" fill="freeze" /></text>
+    <text x="24" y="123" class="unit">AVG REPLY</text>
+    <text x="24" y="147" class="sub">Remote Roles &amp; Freelance</text>
+    <line x1="24" y1="160" x2="262" y2="160" stroke="#FFFFFF" stroke-opacity="0.24" />
+    <text x="24" y="178" class="cta">START A CONVERSATION</text>
+    <text x="262" y="178" text-anchor="end" class="cta arrow">↗</text>
+  </g>
+</svg>

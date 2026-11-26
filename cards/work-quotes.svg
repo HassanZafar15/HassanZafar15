@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="190" viewBox="0 0 432 190" role="img" aria-label="Quotes &amp; Motivation">
+  <style>
+
+    .cat { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; letter-spacing: 0.1em; fill: #C83E2B; }
+    .title { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-size: 29px; fill: #171614; }
+    .desc { font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12.5px; fill: #6B655D; }
+    .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; fill: #6B655D; }
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .rise { opacity: 0; animation: cardIn 0.5s cubic-bezier(0.22,1,0.36,1) 2.20s forwards; }
+    
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .smil-count { display: none !important; }
+      .smil-static { display: inline !important; visibility: visible !important; }
+    }
+    
+</style>
+  <g class="rise">
+    <rect x="0.5" y="0.5" width="431" height="189" rx="14" fill="#F6F3EC" stroke="#DDD6C7" />
+    <rect x="24" y="0.5" width="44" height="3.5" rx="1.75" fill="#C83E2B" />
+    <text x="24" y="32" class="cat">LIFESTYLE · 4.7★ · 10K+</text>
+    <text x="24" y="66" class="title">Quotes &amp; Motivation</text>
+    <text x="24" y="94" class="desc">Daily quotes and motivation app with 10K+ downloads and</text>
+<text x="24" y="112" class="desc">a 4.7★ rating — curated collections, shareable cards,</text>
+<text x="24" y="130" class="desc">favorites, and smart reminders.</text>
+    <rect x="24" y="152" width="61.4" height="22" rx="5" fill="#EFEAE0" stroke="#DDD6C7" /><text x="54.7" y="166.5" text-anchor="middle" class="tag">Flutter</text><rect x="92.4" y="152" width="104.8" height="22" rx="5" fill="#EFEAE0" stroke="#DDD6C7" /><text x="144.8" y="166.5" text-anchor="middle" class="tag">10K+ Downloads</text><rect x="204.2" y="152" width="61.4" height="22" rx="5" fill="#EFEAE0" stroke="#DDD6C7" /><text x="234.9" y="166.5" text-anchor="middle" class="tag">Android</text>
+  </g>
+</svg>
